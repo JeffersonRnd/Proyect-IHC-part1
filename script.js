@@ -49,12 +49,13 @@ document.getElementById('submitLogin').addEventListener('click', (e) => {
     } else {
         alert('Datos registrados correctamente');
         
-        // Espera 2 segundos antes de redirigir a YouTube
+        // Espera 2 segundos antes de redirigir a tu página
         setTimeout(() => {
-            window.location.href = "https://www.youtube.com";
+            window.location.href = "https://jeffersonrnd.github.io/Proyect-IHC-part2/";
         }, 2000);
     }
 });
+
 
 // Al hacer clic en el botón de cliente, mostrar el formulario de registro
 clientButton.addEventListener('click', () => {
@@ -75,7 +76,7 @@ submitLogin.addEventListener('click', (e) => {
         // Mostrar un mensaje de éxito al registrar los datos
         alert('Datos registrados correctamente');
         
-        // Espera 2 segundos antes de redirigir a YouTube
+        // Espera 2 segundos antes de redirigir a tu página
         setTimeout(() => {
             window.location.href = "https://jeffersonrnd.github.io/Proyect-IHC-part2/";
         }, 2000);
