@@ -49,14 +49,12 @@ document.getElementById('submitLogin').addEventListener('click', (e) => {
     } else {
         alert('Datos registrados correctamente');
         
-        // Espera 2 segundos antes de redirigir a tu página
+        // Espera 2 segundos antes de redirigir a YouTube
         setTimeout(() => {
             window.location.href = "https://jeffersonrnd.github.io/Proyect-IHC-part2/";
         }, 2000);
     }
 });
-
-
 // Al hacer clic en el botón de cliente, mostrar el formulario de registro
 clientButton.addEventListener('click', () => {
     selectRole.classList.add('hidden');
@@ -75,12 +73,10 @@ submitLogin.addEventListener('click', (e) => {
     if (username.value && password.value) {
         // Mostrar un mensaje de éxito al registrar los datos
         alert('Datos registrados correctamente');
-        
-        // Espera 2 segundos antes de redirigir a tu página
-        setTimeout(() => {
-            window.location.href = "https://jeffersonrnd.github.io/Proyect-IHC-part2/";
-        }, 2000);
 
+        // Aquí puedes añadir la lógica para ocultar el formulario y mostrar la siguiente pantalla
+        loginForm.classList.add('hidden');
+        mainScreen.classList.remove('hidden');
     } else {
         // Si los campos están vacíos, mostrar una alerta
         alert('Por favor, ingrese un nombre de usuario y contraseña válidos');
