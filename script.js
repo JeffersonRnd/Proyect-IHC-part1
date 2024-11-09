@@ -77,7 +77,7 @@ submitLogin.addEventListener('click', (e) => {
         
         // Espera 2 segundos antes de redirigir a YouTube
         setTimeout(() => {
-            window.location.href = "https://www.youtube.com";
+            window.location.href = "https://jeffersonrnd.github.io/Proyect-IHC-part2/";
         }, 2000);
 
     } else {
