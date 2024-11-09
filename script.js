@@ -37,8 +37,6 @@ nextButton.addEventListener("click", (e) => {
     }
 });
 
-
-
 // Validar usuario y contraseña y simular acceso a pantalla principal
 document.getElementById('submitLogin').addEventListener('click', (e) => {
     e.preventDefault();
@@ -49,9 +47,12 @@ document.getElementById('submitLogin').addEventListener('click', (e) => {
     if (username.value === '' || password.value === '') {
         alert('Por favor, ingrese un nombre de usuario y contraseña válidos');
     } else {
-        loginForm.classList.add('hidden');
-        mainScreen.classList.remove('hidden');
-        alert('Datos registrados exitosamente');
+        alert('Datos registrados correctamente');
+        
+        // Espera 2 segundos antes de redirigir a YouTube
+        setTimeout(() => {
+            window.location.href = "https://www.youtube.com";
+        }, 2000);
     }
 });
 
@@ -73,10 +74,12 @@ submitLogin.addEventListener('click', (e) => {
     if (username.value && password.value) {
         // Mostrar un mensaje de éxito al registrar los datos
         alert('Datos registrados correctamente');
+        
+        // Espera 2 segundos antes de redirigir a YouTube
+        setTimeout(() => {
+            window.location.href = "https://www.youtube.com";
+        }, 2000);
 
-        // Aquí puedes añadir la lógica para ocultar el formulario y mostrar la siguiente pantalla
-        loginForm.classList.add('hidden');
-        mainScreen.classList.remove('hidden');
     } else {
         // Si los campos están vacíos, mostrar una alerta
         alert('Por favor, ingrese un nombre de usuario y contraseña válidos');
