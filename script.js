@@ -64,7 +64,7 @@ document.getElementById('submitLogin').addEventListener('click', (e) => {
             }, 2000);
         } else if (adminButton.classList.contains('active')) {
             setTimeout(() => {
-                window.location.href = "https://www.youtube.com";
+                window.location.href = "https://jeffersonrnd.github.io/Proyect-IHC-part3/";
             }, 2000);
         }
     }
